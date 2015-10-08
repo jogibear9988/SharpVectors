@@ -736,7 +736,7 @@ namespace WpfTestSvgSample
                 return;
             }
 
-            string[] svgFiles = Directory.GetFiles(sourceDir, "*.svg", SearchOption.TopDirectoryOnly);
+            string[] svgFiles = Directory.GetFiles(sourceDir, "*.svg*", SearchOption.TopDirectoryOnly);
 
             treeView.BeginInit();
             treeView.Items.Clear();
